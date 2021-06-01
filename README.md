@@ -1,5 +1,5 @@
 # vue-ionic-example
-
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/julian-lm-cabezas/vue-ionic-example">
 
 ## Framworks
 
@@ -7,6 +7,9 @@
 <a href="https://ionicframework.com/" title="Ionic"><img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/ionic.png" width="50" height="50"/></a>
 <a href="https://capacitorjs.com/" title="Capacitor"><img src="https://seeklogo.com/images/C/capacitor-logo-DF3634DD70-seeklogo.com.png" width="50" height="50"/></a>
 
+- **Vue 3**: Frontend framework for web development
+- **Ionic v5**: UI framwork for native mobile look and feel
+- **Capacitor v3**: Transpiler for APK conversion and mobile plugin access
 
 ## Project setup
 ```
