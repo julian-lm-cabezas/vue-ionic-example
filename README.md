@@ -13,7 +13,17 @@ npm start
 
 ### Compiles and minifies for production
 ```
-npm run build
+ionic capacitor build --prod
+```
+
+### Compiles and builds APK for Android
+```
+ionic capacitor build android --prod
+```
+
+### Compiles and builds APK for IOS
+```
+ionic capacitor build ios --prod
 ```
 
 ### Run your tests
