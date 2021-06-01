@@ -1,6 +1,6 @@
 # vue-ionic-example
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/julian-lm-cabezas/vue-ionic-example">
-
+<img src="https://badges.pufler.dev/visits/julian-lm-cabezas/vue-ionic-example">
 ## Framworks
 
 <a href="https://v3.vuejs.org/" title="Vue"><img src="https://v3.vuejs.org/logo.png" width="50" height="50"/></a>
