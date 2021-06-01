@@ -1,11 +1,12 @@
 # vue-ionic-example
 <p float="left">
+    <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/julian-lm-cabezas/vue-ionic-example">
     <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/julian-lm-cabezas/vue-ionic-example">
     <img src="https://badges.pufler.dev/visits/julian-lm-cabezas/vue-ionic-example">
     <img src="https://badges.pufler.dev/created/julian-lm-cabezas/vue-ionic-example">
 </p>
 
-## Framworks
+## Frameworks
 
 <a href="https://v3.vuejs.org/" title="Vue"><img src="https://v3.vuejs.org/logo.png" width="50" height="50"/></a>
 <a href="https://ionicframework.com/" title="Ionic"><img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/ionic.png" width="50" height="50"/></a>
@@ -14,6 +15,11 @@
 - **Vue 3**: Frontend framework for web development
 - **Ionic v5**: UI framwork for native mobile look and feel
 - **Capacitor v3**: Transpiler for APK conversion and mobile plugin access
+
+## Requirements
+
+- Node 12 and above
+- Git
 
 ## Project setup
 ```
