@@ -3,7 +3,7 @@
 
 ## Framworks
 
-<a href="https://v3.vuejs.org/" title="Vue"><img src="https://v3.vuejs.org/logo.png" /></a>
+<a href="https://v3.vuejs.org/" title="Vue"><img src="https://v3.vuejs.org/logo.png" style="width:50px;height:auto"/></a>
 
 ## Project setup
 ```
