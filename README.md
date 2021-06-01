@@ -4,7 +4,7 @@
 ## Framworks
 
 <a href="https://v3.vuejs.org/" title="Vue"><img src="https://v3.vuejs.org/logo.png" width="50" height="50"/></a>
-<a href="https://ionicframework.com/" title="Ionic"><img src="https://png.pngtree.com/svg/20170719/ionic_1307248.png" width="50" height="50"/></a>
+<a href="https://ionicframework.com/" title="Ionic"><img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/ionic.png" width="50" height="50"/></a>
 <a href="https://capacitorjs.com/" title="Capacitor"><img src="https://seeklogo.com/images/C/capacitor-logo-DF3634DD70-seeklogo.com.png" width="50" height="50"/></a>
 
 
