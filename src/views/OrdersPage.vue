@@ -21,11 +21,16 @@
                         </ion-item>
                     </ion-col>
                 </ion-row>
+                <ion-row>
+                    <ion-col size="12">
+                        <ion-slides pager="false" :options="{ initialSlide: 1, speed: 400 }" style="width:100%">
+                            <ion-slide><order-list :orders="orders"/></ion-slide>
+                            <ion-slide><order-list :orders="orders"/></ion-slide>
+                        </ion-slides>
+                    </ion-col>
+                </ion-row>
             </ion-grid>
-            <ion-slides pager="false" :options="{ initialSlide: 1, speed: 400 }">
-                <ion-slide><order-list :orders="orders"/></ion-slide>
-                <ion-slide><order-list :orders="orders"/></ion-slide>
-            </ion-slides>
+            
         </ion-content>
     </ion-page>
 </template>
@@ -59,3 +64,6 @@ export default {
     }
 }
 </script>
+<style lang="scss">
+ion-slide >:first-child { width: 100%; }
+</style>
