@@ -1,31 +1,49 @@
 <template>
-    <ion-list>
-        <ion-item v-for="o in orders" :key="`order${o.id}`">
-            <ion-icon slot="start" :icon="ic" color="primary"></ion-icon>
-            <ion-label>
-                <h2>Nº order: {{o.id}}</h2>
-                <h3>client: {{o.clientId}}</h3>
-                <p>{{o.date}}</p>
-          </ion-label>
-          <ion-label>{{o.price}} €</ion-label>
-        </ion-item>
-    </ion-list>
-    
+<ion-grid>
+    <ion-row>
+        <ion-list>
+            <ion-item v-for="o in orders" :key="`order${o.id}`">
+                <ion-icon slot="start" :icon="bagCheck" color="primary"></ion-icon>
+                <ion-label>
+                    <h2>Nº order: {{o.id}}</h2>
+                    <h3>client: {{o.clientId}}</h3>
+                    <p>{{o.date}}</p>
+            </ion-label>
+            <ion-label>{{o.price}} €</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-row>
+    <ion-row justify-content-center align-items-center>
+        <ion-col>
+            <ion-button @click="showModal(true)">
+                <ion-icon slot="start" :icon="add" ></ion-icon>Add Order
+            </ion-button>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+<ion-modal :is-open="modalVisible">
+    <ion-item>
+        <ion-label>Helloooo</ion-label>
+        <ion-button @click="showModal(false)">CLOSE</ion-button>
+    </ion-item>
+</ion-modal>
 </template>
 <script>
-import { ref, onMounted } from 'vue'
-import { IonList, IonItem,IonIcon, IonLabel} from '@ionic/vue'
-import { bagCheck} from 'ionicons/icons'
+import { onMounted, ref } from 'vue'
+import { IonGrid,IonRow,IonCol, IonList, IonItem,IonIcon, IonLabel, IonButton, IonModal} from '@ionic/vue'
+import { bagCheck, add} from 'ionicons/icons'
+
 export default {
     props:['orders'],
-    components: { IonList, IonItem,IonIcon, IonLabel},
+    components: { IonGrid, IonRow,IonCol, IonList, IonItem,IonIcon, IonLabel, IonButton, IonModal},
     setup(props){
-        const ic = ref(bagCheck)
-        onMounted(()=>{
-            console.log(props.orders)
-        })
 
-        return{ ic }
+        const modalVisible = ref(false)
+        onMounted(()=> console.log(props.orders))
+
+        const showModal = (bool) => modalVisible.value= bool
+
+        return{ bagCheck,add, modalVisible, showModal }
     }
     
 }
