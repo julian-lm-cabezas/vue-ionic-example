@@ -20,6 +20,8 @@
 
 - Node 12 and above
 - Git
+- Android Studio (Android development)
+- XCode (IOS development)
 
 ## Project setup
 ```
@@ -38,6 +40,13 @@ npx cap add <platform>
 ### Compiles and hot-reloads for development
 ```
 npm start
+```
+
+**Mobile devices**
+```
+ionic capacitor open <platform>
+ionic capacitor run <platform> --livereload --external
+
 ```
 
 ### Compiles and minifies for production
