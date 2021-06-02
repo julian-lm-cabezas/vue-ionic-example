@@ -27,6 +27,14 @@ npm install -g @ionic/cli@latest
 npm install
 ```
 
+### Add target platforms
+```
+npm install @capacitor/<platform>
+npx cap init
+npx cap add <platform>
+```
+*set android, electron and/or ios in platform, web is already included
+
 ### Compiles and hot-reloads for development
 ```
 npm start

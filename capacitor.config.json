@@ -1,0 +1,6 @@
+{
+  "appId": "com.vueionicexample.app",
+  "appName": "vue-ionic-example",
+  "webDir": "public",
+  "bundledWebRuntime": false
+}
