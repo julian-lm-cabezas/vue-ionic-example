@@ -1,12 +1,8 @@
 <template>
     <ion-page>
-        <ion-header>
-            <ion-toolbar>
-                <ion-title>ORDERS</ion-title>
-            </ion-toolbar>
-        </ion-header>
+        <nav-menu/>
         <ion-content>
-            <ion-grid>
+            <ion-grid style="margin-top:3rem">
                 <ion-row >
                     <ion-col size-md="3" size-xs="6" offset-md="3">
                         <ion-item @click="loadList(false)">
@@ -35,12 +31,15 @@
     </ion-page>
 </template>
 <script>
-import {IonPage, IonHeader, IonToolbar, IonTitle, IonContent,IonGrid, IonRow,IonCol,IonItem, IonLabel, IonCheckbox,IonSlides, IonSlide } from '@ionic/vue'
+import {IonPage, IonContent,IonGrid, IonRow,IonCol,IonItem, IonLabel, IonCheckbox,IonSlides, IonSlide } from '@ionic/vue'
+import NavMenu from '@/components/NavMenu.vue';
+
 import OrderList from '@/components/OrderList.vue'
 import OrderList2 from '@/components/OrderList2.vue'
 
 export default {
-    components:{IonPage, IonHeader,IonToolbar, IonTitle, IonContent,IonGrid, IonRow,IonCol, IonItem, IonLabel, IonCheckbox,IonSlides, IonSlide, 
+    components:{IonPage, IonContent,IonGrid, IonRow,IonCol, IonItem, IonLabel, IonCheckbox,IonSlides, IonSlide,
+        'nav-menu':NavMenu, 
         'order-list':OrderList,
         'order-list2':OrderList2 
     },
