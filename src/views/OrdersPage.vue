@@ -23,9 +23,9 @@
                 </ion-row>
                 <ion-row>
                     <ion-col size="12">
-                        <ion-slides pager="false" :options="{ initialSlide: 1, speed: 400 }" style="width:100%">
+                        <ion-slides pager="false" :options="{ initialSlide: 0, speed: 600 }" style="width:100%">
                             <ion-slide><order-list :orders="orders"/></ion-slide>
-                            <ion-slide><order-list :orders="orders"/></ion-slide>
+                            <ion-slide><order-list2 :orders="orders"/></ion-slide>
                         </ion-slides>
                     </ion-col>
                 </ion-row>
@@ -37,8 +37,13 @@
 <script>
 import {IonPage, IonHeader, IonToolbar, IonTitle, IonContent,IonGrid, IonRow,IonCol,IonItem, IonLabel, IonCheckbox,IonSlides, IonSlide } from '@ionic/vue'
 import OrderList from '@/components/OrderList.vue'
+import OrderList2 from '@/components/OrderList2.vue'
+
 export default {
-    components:{IonPage, IonHeader,IonToolbar, IonTitle, IonContent,IonGrid, IonRow,IonCol, IonItem, IonLabel, IonCheckbox,IonSlides, IonSlide, 'order-list':OrderList },
+    components:{IonPage, IonHeader,IonToolbar, IonTitle, IonContent,IonGrid, IonRow,IonCol, IonItem, IonLabel, IonCheckbox,IonSlides, IonSlide, 
+        'order-list':OrderList,
+        'order-list2':OrderList2 
+    },
     data: ()=>{
         return {
             vue3: false,
@@ -59,7 +64,7 @@ export default {
         loadList(bool){
             console.log(bool)
             this.vue3 = bool
-            document.querySelector('ion-slides').slideTo(bool?0:1)
+            document.querySelector('ion-slides').slideTo(bool?1:0)
         }
     }
 }

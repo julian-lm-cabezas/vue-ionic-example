@@ -1,0 +1,45 @@
+<template>
+    <ion-list>
+        <ion-item v-for="o in orders" :key="`order${o.id}`">
+            <ion-icon slot="start" :icon="ic" color="primary"></ion-icon>
+            <ion-label>
+                <h2>Nº order: {{o.id}}</h2>
+                <h3>client: {{o.clientId}}</h3>
+                <p>{{o.date}}</p>
+          </ion-label>
+          <ion-label>{{o.price}} €</ion-label>
+        </ion-item>
+    </ion-list>
+    
+</template>
+<script>
+import { ref, onMounted } from 'vue'
+import { IonList, IonItem,IonIcon, IonLabel} from '@ionic/vue'
+import { bagCheck} from 'ionicons/icons'
+export default {
+    props:['orders'],
+    components: { IonList, IonItem,IonIcon, IonLabel},
+    setup(props){
+        const ic = ref(bagCheck)
+        onMounted(()=>{
+            console.log(props.orders)
+        })
+
+        return{ ic }
+    }
+    
+}
+</script>
+<style lang="scss" scoped>
+ion-list{
+    width: 100%;
+}
+ion-item{
+    ion-label{
+        h2{ color:rgb(81, 160, 134);}
+        h3{ color:#666}
+        p{ color:#AAA}
+        &:nth-of-type(2){color: rgb(32, 146, 108); font-weight: bold;}
+    }
+}
+</style>
